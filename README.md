@@ -1,5 +1,6 @@
 # Einsy Rambo on Makergear M2
 ## Marlin 1.1 was used in this project 
+### Marlin should be downloaded before starting this project, these are just changes made to the pre-existing marlin files
 ### In configuration.h (file in github files) the following changes were made:
  - ``` #ifndef MOTHERBOARD #define MOTHERBOARD BOARD_EINSY_RAMBO #endif ```
 The board was changed from the RAMBo board to the Einsy RAMBo (The Einsy board should be in boards.h) 
