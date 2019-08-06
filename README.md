@@ -56,6 +56,7 @@ This is for an sd card reader attachment
 
 # Pin Out for Einsy board
 - [Here](https://reprap.org/wiki/EinsyRambo_development) are all the pin locations on the einsy board
+- [Here](https://reprap.org/wiki/File:RAMBo-Schem-1.2e-i2c-note.png) is the schematic for the RAMBo v1.3
 - The x and y min endstop wires will need to be removed from their three wire connectors and be placed into two wire connectors, these then can go into their respective spot on the einsy (keep in mind which wire is GND)
 - The z endstop can stay in its three wire connector and should be placed into the - (blue) s (green) T (yellow) positions
 - The motor wires can stay in their original connectors, simply remove them from the rambo board and plug them into their respective spots on the einsy, the top z motor plug is the standard plug
