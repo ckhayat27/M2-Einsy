@@ -1,6 +1,6 @@
 # Einsy Rambo on Makergear M2
 ## Marlin 1.1 was used in this project 
-## In configuration.h (file in github files) the following changes were made:
+### In configuration.h (file in github files) the following changes were made:
  - ``` #ifndef MOTHERBOARD #define MOTHERBOARD BOARD_EINSY_RAMBO #endif ```
 The board was changed from the RAMBo board to the Einsy RAMBo (The Einsy board should be in boards.h) 
  - ``` #define DEFAULT_NOMINAL_FILAMENT_DIA 1.75 ```
@@ -41,15 +41,15 @@ These settings define the Xmin, Ymin, and Zmax endstops
 Limits of the M2 dimensions, all the min positions should be set to 0
  - ``` #define SDSUPPORT #define SD_CHECK_AND_RETRY ```
 If you have a SD card input, then uncomment the following commands (sd check and retry is optional, just a precaution)
-## In Configuration_adv.h (file in github files) the following changes were made:
+### In Configuration_adv.h (file in github files) the following changes were made:
  - ``` #include "TMC2130Stepper.h" ```
 Include the arduino library for the TMC2130 SPI stepper control
  - ``` #define E0_AUTO_FAN_PIN  6 ```
 The fan that comes with the M2 will need to be replaced by a 5v dc fan with an equal air flow value (bed cooling CFM is 12.5, other two are 6.5 (i think))
-## In Pins_Einsy_Rambo.h (file in github files) the following change was made: 
+### In Pins_Einsy_Rambo.h (file in github files) the following change was made: 
  - ``` #define SDSS 53 ```
 This change is for an sd card reader attachment
-## In Sdfatconfig.h (file in github files) the following change was made:
+### In Sdfatconfig.h (file in github files) the following change was made:
  - ``` #define SOFT_SPI_CS_PIN 53 #define SOFT_SPI_MOSI_PIN 51 #define SOFT_SPI_MISO_PIN 50 #define SOFT_SPI_SCK_PIN 52 ```
 This is for an sd card reader attachment
 
@@ -65,6 +65,6 @@ This is for an sd card reader attachment
 - The bed input and power input should come from your 24 volt power source. The wires from the power source will need the same crimps as the bed heat wires and should be screwed down in the designated area.
 - If you wish to reinstall the sd card reader the pinout is a little tricky. The 5 volt power wire and the ground wire should be connected to pins 1(5v) and 2(GND) in the "ext 1" sections of the board. The MOSI wire should be connected to pin 12 on the extension J19. The SS wire should be connected to pin 5 on the extension J19. The SCK wire should be connected to pin 11 on the extension J19. The MISO wire should be connected to pin 9 on the extension J19. How you wish to connect this to the board is up to you.
 
- ## The Arduino IDE was used to upload the firmware to the Einsy Board. 
- ## The M2 Quickstart app can be used for leveling the bed, it should not, however, be used for printing or setting temperature. Programs such as Simplify3D and pronterface will allow you to print.
+ ### The Arduino IDE was used to upload the firmware to the Einsy Board. 
+ ### The M2 Quickstart app can be used for leveling the bed, it should not, however, be used for printing or setting temperature. Programs such as Simplify3D and pronterface will allow you to print.
  
