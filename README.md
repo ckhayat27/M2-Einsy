@@ -1,14 +1,20 @@
-Marlin 1.1 was used in this project /n
-In configuration.h the following changes were made:
+#Einsy Rambo on Makergear M2
+##Marlin 1.1 was used in this project 
+#######In configuration.h the following changes were made:
   -The board was changed from the RAMBo board to the Einsy RAMBo (The Einsy board should be in boards.h) 
+        ```
         #ifndef MOTHERBOARD
           #define MOTHERBOARD BOARD_EINSY_RAMBO
         #endif 
-  -#define DEFAULT_NOMINAL_FILAMENT_DIA 1.75 
+        ```
+  -Define the filament diameter as 1.75 
+        ```
+        #define DEFAULT_NOMINAL_FILAMENT_DIA 1.75
+        ```
   -#define POWER_SUPPLY 1
   -#define TEMP_SENSOR_0 1 and #define TEMP_SENSOR_BED 1 (there are only two thermistors on makergear M2)
   -#define TEMP_RESIDENCY_TIME 5, #define TEMP_HYSTERESIS 4, and #define TEMP_WINDOW 2 (values from original M2 marlin files on github)
-  -#define TEMP_BED_RESIDENCY_TIME 5, #define TEMP_BED_HYSTERESIS 4, and #define TEMP_BED_WINDOW 2 (These commands did not exist in original M2 marlin file, so the values were copied from the previous lines (shown above))
+  -#define TEMP_BED_RESIDENCY_TIME 5, #define TEMP_BED_HYSTERESIS 4, and #define TEMP_BED_WINDOW 2 (These commands did not exist in             original M2 marlin file, so the values were copied from the previous lines (shown above))
   -#define HEATER_0_MAXTEMP 305 (limit of the extruder heater)
   -#define BED_MAXTEMP 150 (limit of bed heater)
   -#define DEFAULT_Kp 25.89, #define DEFAULT_Ki 1.94, and #define DEFAULT_Kd 86.53 (values from original M2 marlin files on github)
