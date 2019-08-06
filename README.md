@@ -47,7 +47,7 @@ Include the arduino library for the TMC2130 SPI stepper control
  - ``` #define E0_AUTO_FAN_PIN  6 ```
 The fan that comes with the M2 will need to be replaced by a 5v dc fan with an equal air flow value (bed cooling CFM is 12.5, other two are 6.5 (i think))
 ## In Pins_Einsy_Rambo.h (file in github files) the following change was made: 
- - ``` #define SDSS 53 ``
+ - ``` #define SDSS 53 ```
 This should be changed regardless, but this change is for an sd card reader
 ## In Sdfatconfig.h (file in github files) the following change was made:
  - ``` #define SOFT_SPI_CS_PIN 53 #define SOFT_SPI_MOSI_PIN 51 #define SOFT_SPI_MISO_PIN 50 #define SOFT_SPI_SCK_PIN 52 ```
@@ -63,7 +63,7 @@ This is for an sd card reader attachment
 - The extruder heat (heat 0) wires must be put into another connector (usually comes with the board, it is angled) and will be plugged into the "heater output" next to the fan outputs.
 - The bed heat is no longer a regular pin on the board. The bed heat wires will need to be crimped and connected to the bed output pins on the board.
 - The bed input and power input should come from your 24 volt power source. The wires from the power source will need the same crimps as the bed heat wires and should be screwed down in the designated area.
--If you wish to reinstall the sd card reader the pinout is a little tricky. The 5 volt power wire and the ground wire should be connected to pins 1(5v) and 2(GND) in the "ext 1" sections of the board. The MOSI wire should be connected to pin 12 on the extension J19. The SS wire should be connected to pin 5 on the extension J19. The SCK wire should be connected to pin 11 on the extension J19. The MISO wire should be connected to pin 9 on the extension J19. How you want to connected this to the board is up to you.
+- If you wish to reinstall the sd card reader the pinout is a little tricky. The 5 volt power wire and the ground wire should be connected to pins 1(5v) and 2(GND) in the "ext 1" sections of the board. The MOSI wire should be connected to pin 12 on the extension J19. The SS wire should be connected to pin 5 on the extension J19. The SCK wire should be connected to pin 11 on the extension J19. The MISO wire should be connected to pin 9 on the extension J19. How you want to connected this to the board is up to you.
 
  
  
