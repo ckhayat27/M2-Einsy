@@ -1,5 +1,4 @@
 Marlin 1.1 was used in this project
-
 In configuration.h the following changes were made:
   -The board was changed from the RAMBo board to the Einsy RAMBo (The Einsy board should be in boards.h) 
         #ifndef MOTHERBOARD
